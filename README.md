@@ -5,7 +5,7 @@ The **zero-dependency** ~_260B_ cookie manager for your Javascript projects.
 # Install
 
 ```
-npm install --save aural
+npm install --save koekie
 ```
 
 # Usage
