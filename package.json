@@ -1,8 +1,8 @@
 {
-  "name": "uncookie",
-  "version": "0.6.0",
+  "name": "koekie",
+  "version": "0.7.0",
   "description": "The only cookie manager you need for your JS applications, for only 260 bytes.",
-  "main": "./dist/uncookie.js",
+  "main": "./dist/koekie.js",
   "scripts": {
     "build": "microbundle -o ./dist",
     "check": "microbundle -o ./dist --compress false",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mjanssen/uncookie.git"
+    "url": "https://github.com/mjanssen/koekie.git"
   },
   "prettier": {
     "trailingComma": "es5",
