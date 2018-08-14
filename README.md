@@ -5,7 +5,7 @@ The **zero-dependency** ~_260B_ cookie manager for your Javascript projects.
 # Install
 
 ```
-npm install --save aural
+npm install --save koekie
 ```
 
 # Usage
@@ -13,29 +13,19 @@ npm install --save aural
 ```
 import { setCookie, getCookie, getAllCookies, cookieExists, removeCookie } from 'koekie';
 
-/**
-* Set a specific cookie, with a given value.
-*/
+// Set a specific cookie, with a given value.
 setCookie(name, value);
 
-/**
-* Get a specific cookie. Returns false if non-existent
-*/
+// Get a specific cookie. Returns false if non-existent
 getCookie(name);
 
-/**
-* Returns an array with all available cookies
-*/
+// Returns an array with all available cookies
 getAllCookies();
 
-/**
-* Surprisingly, returns a bool true/false if a cookie exists
-*/
+// Surprisingly, returns a bool true/false if a cookie exists
 cookieExists(name);
 
-/**
-* Removes a cookie
-*/
+// Removes a cookie
 removeCookie(name)
 ```
 
