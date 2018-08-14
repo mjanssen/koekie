@@ -2,13 +2,13 @@
 
 The **zero-dependency** ~_260B_ cookie manager for your Javascript projects.
 
-# install
+# Install
 
 ```
 npm install --save aural
 ```
 
-# usage
+# Usage
 
 ```
 import { setCookie, getCookie, getAllCookies, cookieExists, removeCookie } from 'koekie';
