@@ -13,8 +13,13 @@ npm install --save koekie
 ```
 import { setCookie, getCookie, getAllCookies, cookieExists, removeCookie } from 'koekie';
 
-// Set a specific cookie, with a given value.
-setCookie(name, value);
+// Options are optional. Every cookie expires after one hour by default.
+const options = {
+  expires: 3600, // one hour
+};
+
+// Set a specific cookie, with a given value. Stores for one hour.
+setCookie(name, value, options);
 
 // Get a specific cookie. Returns false if non-existent
 getCookie(name);
