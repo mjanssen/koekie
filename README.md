@@ -14,6 +14,11 @@ npm install --save aural
 import { getCookie, getAllCookies, cookieExists, removeCookie } from 'koekie';
 
 /**
+* Set a specific cookie, with a given value.
+*/
+setCookie(name, value);
+
+/**
 * Get a specific cookie. Returns false if non-existent
 */
 getCookie(name);
