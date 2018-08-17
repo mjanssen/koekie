@@ -1,7 +1,7 @@
 {
   "name": "koekie",
-  "version": "0.7.0",
-  "description": "The only cookie manager you need for your JS applications, for only 260 bytes.",
+  "version": "0.8.0",
+  "description": "The only cookie manager you need for your JS applications, for only 330 bytes.",
   "main": "./dist/koekie.js",
   "scripts": {
     "build": "microbundle -o ./dist",
