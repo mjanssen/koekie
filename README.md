@@ -1,5 +1,8 @@
 # Koekie
 
+[![npm](https://img.shields.io/npm/v/koekie.svg)](http://npm.im/koekie)
+[![gzip size](http://img.badgesize.io/https://unpkg.com/koekie/dist/koekie.js?compression=gzip)](https://unpkg.com/koekie/dist/koekie.js)
+
 The **zero-dependency** ~_330B_ cookie manager for your Javascript projects.
 
 # Install
