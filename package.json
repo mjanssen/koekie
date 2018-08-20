@@ -5,6 +5,7 @@
   "main": "./dist/koekie.js",
   "scripts": {
     "build": "microbundle -o ./dist",
+    "local": "microbundle -o ./local --compress false",
     "check": "microbundle -o ./dist --compress false",
     "dev": "microbundle watch"
   },
