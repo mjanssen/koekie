@@ -9,7 +9,7 @@ function setCookie(name, value, options = { expires: 1, in: 'days' }) {
 
 function getCookie(name) {
   const c = document.cookie.match(new RegExp(`(^| )${name}=([^;]+)`));
-  return c ? c[2] : undefined;
+  return c ? c[2] : false;
 }
 
 function cookieExists(name) {
