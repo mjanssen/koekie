@@ -1,4 +1,4 @@
-function setCookie(name, value, options = { expires: 1, in: 'days', path = '/' }) {
+function setCookie(name, value, options = { expires: 1, in: 'days', path: '/' }) {
   const expiryDate = new Date();
   if (options.in === 'hours') expiryDate.setHours(expiryDate.getHours() + options.expires);
   if (options.in === 'days') expiryDate.setDate(expiryDate.getDate() + options.expires);
@@ -20,7 +20,7 @@ function getAllCookies() {
   return document.cookie;
 }
 
-function removeCookie(name, options = { path = '/' }) {
+function removeCookie(name, options = { path: '/' }) {
   document.cookie = `${name}=;expires=0;path=${options.path}`;
 }
 
