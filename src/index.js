@@ -4,7 +4,7 @@ function setCookie(name, value, options = { expires: 1, in: 'days', path = '/' }
   if (options.in === 'days') expiryDate.setDate(expiryDate.getDate() + options.expires);
   if (options.in === 'months') expiryDate.setMonth(expiryDate.getMonth() + options.expires);
   if (options.in === 'years') expiryDate.setFullYear(expiryDate.getFullYear() + options.expires);
-  document.cookie = `${name}=${value};expires=${expiryDate.toGMTString()};path=${path}`;
+  document.cookie = `${name}=${value};expires=${expiryDate.toGMTString()};path=${options.path}`;
 }
 
 function getCookie(name) {
@@ -20,8 +20,8 @@ function getAllCookies() {
   return document.cookie;
 }
 
-function removeCookie(name, { path = '/' }) {
-  document.cookie = `${name}=;expires=0;path=${path}`;
+function removeCookie(name, options = { path = '/' }) {
+  document.cookie = `${name}=;expires=0;path=${options.path}`;
 }
 
 export default { setCookie, getCookie, getAllCookies, cookieExists, removeCookie };
