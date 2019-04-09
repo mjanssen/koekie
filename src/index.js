@@ -20,8 +20,8 @@ function getAllCookies() {
   return document.cookie;
 }
 
-function removeCookie(name) {
-  document.cookie = `${name}=;expires=0`;
+function removeCookie(name, { path = '/' }) {
+  document.cookie = `${name}=;expires=0;path=${path}`;
 }
 
 export default { setCookie, getCookie, getAllCookies, cookieExists, removeCookie };

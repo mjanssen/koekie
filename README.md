@@ -28,8 +28,8 @@ getAllCookies();
 // Surprisingly, returns a bool true/false if a cookie exists
 cookieExists(name);
 
-// Removes a cookie
-removeCookie(name)
+// Removes a cookie - Make sure to pass the same path as you used to create it
+removeCookie(name, { path: '/' });
 ```
 
 # Options

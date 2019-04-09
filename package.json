@@ -1,6 +1,6 @@
 {
   "name": "koekie",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The only cookie manager you need for your JS applications, for only 330 bytes.",
   "main": "./dist/koekie.js",
   "scripts": {
