@@ -1,10 +1,10 @@
-function setCookie(name, value, options = { expires: 1, in: 'days' }) {
+function setCookie(name, value, options = { expires: 1, in: 'days', path = '/' }) {
   const expiryDate = new Date();
   if (options.in === 'hours') expiryDate.setHours(expiryDate.getHours() + options.expires);
   if (options.in === 'days') expiryDate.setDate(expiryDate.getDate() + options.expires);
   if (options.in === 'months') expiryDate.setMonth(expiryDate.getMonth() + options.expires);
   if (options.in === 'years') expiryDate.setFullYear(expiryDate.getFullYear() + options.expires);
-  document.cookie = `${name}=${value};expires=${expiryDate.toGMTString()}`;
+  document.cookie = `${name}=${value};expires=${expiryDate.toGMTString()};path=${path}`;
 }
 
 function getCookie(name) {

@@ -17,7 +17,7 @@ npm install --save koekie
 import { setCookie, getCookie, getAllCookies, cookieExists, removeCookie } from 'koekie';
 
 // Set a specific cookie, with a given value.
-setCookie(name, value, { expires: 1, in: 'hours' });
+setCookie(name, value, { expires: 1, in: 'hours', path: '/' });
 
 // Get a specific cookie. Returns false if non-existent
 getCookie(name);
@@ -39,6 +39,8 @@ one hour. The `in` property accepts four different types; `hours`, `days`, `mont
 
 When you want to set a cookie for one month, pass `{ expires: 1, in: 'months' }`. This will use the Javascript `Date()` function to calculate the length and set it for
 the correct time.
+
+The `path` option is `/` by default.
 
 _By default, the cookie will be stored for one hour!_
 
